@@ -46,105 +46,148 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatVe.cs">
+    <Compile Include="BLL\ChitietchuyenbayBLL.cs" />
+    <Compile Include="BLL\ChitietdoanhthuthangBLL.cs" />
+    <Compile Include="BLL\ChuyenbayBLL.cs" />
+    <Compile Include="BLL\DoanhthunamBLL.cs" />
+    <Compile Include="BLL\DoanhthuthangBLL.cs" />
+    <Compile Include="BLL\DongiaBLL.cs" />
+    <Compile Include="BLL\HangveBLL.cs" />
+    <Compile Include="BLL\HanhkhachBLL.cs" />
+    <Compile Include="BLL\PhieudatchoBLL.cs" />
+    <Compile Include="BLL\SanbayBLL.cs" />
+    <Compile Include="BLL\ThamsoBLL.cs" />
+    <Compile Include="BLL\TinhtrangveBLL.cs" />
+    <Compile Include="BLL\TuyenbayBLL.cs" />
+    <Compile Include="BLL\VechuyenbayBLL.cs" />
+    <Compile Include="DAL\ChitietchuyenbayDAL.cs" />
+    <Compile Include="DAL\ChitietdoanhthuthangDAL.cs" />
+    <Compile Include="DAL\ChuyenbayDAL.cs" />
+    <Compile Include="DAL\DataHelper.cs" />
+    <Compile Include="DAL\DoanhthunamDAL.cs" />
+    <Compile Include="DAL\DoanhthuthangDAL.cs" />
+    <Compile Include="DAL\DongiaDAL.cs" />
+    <Compile Include="DAL\HangveDAL.cs" />
+    <Compile Include="DAL\HanhkhachDAL.cs" />
+    <Compile Include="DAL\PhieudatchoDAL.cs" />
+    <Compile Include="DAL\SanbayDAL.cs" />
+    <Compile Include="DAL\ThamsoDAL.cs" />
+    <Compile Include="DAL\TinhtrangveDAL.cs" />
+    <Compile Include="DAL\TuyenbayDAL.cs" />
+    <Compile Include="DAL\VechuyenbayDAL.cs" />
+    <Compile Include="DTO\Chitietchuyenbay.cs" />
+    <Compile Include="DTO\Chitietdoanhthuthang.cs" />
+    <Compile Include="DTO\Chuyenbay.cs" />
+    <Compile Include="DTO\Doanhthunam.cs" />
+    <Compile Include="DTO\Doanhthuthang.cs" />
+    <Compile Include="DTO\Dongia.cs" />
+    <Compile Include="DTO\Hangve.cs" />
+    <Compile Include="DTO\Hanhkhach.cs" />
+    <Compile Include="DTO\Phieudatcho.cs" />
+    <Compile Include="DTO\Sanbay.cs" />
+    <Compile Include="DTO\Thamso.cs" />
+    <Compile Include="DTO\Tinhtrangve.cs" />
+    <Compile Include="DTO\Tuyenbay.cs" />
+    <Compile Include="DTO\Vechuyenbay.cs" />
+    <Compile Include="GUI\DatVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatVe.Designer.cs">
+    <Compile Include="GUI\DatVe.Designer.cs">
       <DependentUpon>DatVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="LapBaoCaoNam.cs">
+    <Compile Include="GUI\LapBaoCaoNam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LapBaoCaoNam.Designer.cs">
+    <Compile Include="GUI\LapBaoCaoNam.Designer.cs">
       <DependentUpon>LapBaoCaoNam.cs</DependentUpon>
     </Compile>
-    <Compile Include="LapBaoCaoThang.cs">
+    <Compile Include="GUI\LapBaoCaoThang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LapBaoCaoThang.Designer.cs">
+    <Compile Include="GUI\LapBaoCaoThang.Designer.cs">
       <DependentUpon>LapBaoCaoThang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MAIN.cs">
+    <Compile Include="GUI\MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MAIN.Designer.cs">
+    <Compile Include="GUI\MAIN.Designer.cs">
       <DependentUpon>MAIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanLichChuyenBay.cs">
+    <Compile Include="GUI\NhanLichChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanLichChuyenBay.Designer.cs">
+    <Compile Include="GUI\NhanLichChuyenBay.Designer.cs">
       <DependentUpon>NhanLichChuyenBay.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyChuyenBay.cs">
+    <Compile Include="GUI\QuanLyChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyChuyenBay.Designer.cs">
+    <Compile Include="GUI\QuanLyChuyenBay.Designer.cs">
       <DependentUpon>QuanLyChuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLySanBay.cs">
+    <Compile Include="GUI\QuanLySanBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLySanBay.Designer.cs">
+    <Compile Include="GUI\QuanLySanBay.Designer.cs">
       <DependentUpon>QuanLySanBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh1.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh1.Designer.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh1.Designer.cs">
       <DependentUpon>ThayDoiQuyDinh1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh2.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh2.Designer.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh2.Designer.cs">
       <DependentUpon>ThayDoiQuyDinh2.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh3.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThayDoiQuyDinh3.Designer.cs">
+    <Compile Include="GUI\ThayDoiQuyDinh3.Designer.cs">
       <DependentUpon>ThayDoiQuyDinh3.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyTuyenBay.cs">
+    <Compile Include="GUI\QuanLyTuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyTuyenBay.Designer.cs">
+    <Compile Include="GUI\QuanLyTuyenBay.Designer.cs">
       <DependentUpon>QuanLyTuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="BanVeChuyenBay.cs">
+    <Compile Include="GUI\BanVeChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BanVeChuyenBay.Designer.cs">
+    <Compile Include="GUI\BanVeChuyenBay.Designer.cs">
       <DependentUpon>BanVeChuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemHangVe.cs">
+    <Compile Include="GUI\ThemHangVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemHangVe.Designer.cs">
+    <Compile Include="GUI\ThemHangVe.Designer.cs">
       <DependentUpon>ThemHangVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemHanhKhach.cs">
+    <Compile Include="GUI\ThemHanhKhach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemHanhKhach.Designer.cs">
+    <Compile Include="GUI\ThemHanhKhach.Designer.cs">
       <DependentUpon>ThemHanhKhach.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DatVe.resx">
+    <EmbeddedResource Include="GUI\DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LapBaoCaoNam.resx">
+    <EmbeddedResource Include="GUI\LapBaoCaoNam.resx">
       <DependentUpon>LapBaoCaoNam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LapBaoCaoThang.resx">
+    <EmbeddedResource Include="GUI\LapBaoCaoThang.resx">
       <DependentUpon>LapBaoCaoThang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MAIN.resx">
+    <EmbeddedResource Include="GUI\MAIN.resx">
       <DependentUpon>MAIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanLichChuyenBay.resx">
+    <EmbeddedResource Include="GUI\NhanLichChuyenBay.resx">
       <DependentUpon>NhanLichChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -157,31 +200,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="QuanLyChuyenBay.resx">
+    <EmbeddedResource Include="GUI\QuanLyChuyenBay.resx">
       <DependentUpon>QuanLyChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLySanBay.resx">
+    <EmbeddedResource Include="GUI\QuanLySanBay.resx">
       <DependentUpon>QuanLySanBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyTuyenBay.resx">
+    <EmbeddedResource Include="GUI\QuanLyTuyenBay.resx">
       <DependentUpon>QuanLyTuyenBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThayDoiQuyDinh1.resx">
+    <EmbeddedResource Include="GUI\ThayDoiQuyDinh1.resx">
       <DependentUpon>ThayDoiQuyDinh1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThayDoiQuyDinh2.resx">
+    <EmbeddedResource Include="GUI\ThayDoiQuyDinh2.resx">
       <DependentUpon>ThayDoiQuyDinh2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThayDoiQuyDinh3.resx">
+    <EmbeddedResource Include="GUI\ThayDoiQuyDinh3.resx">
       <DependentUpon>ThayDoiQuyDinh3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BanVeChuyenBay.resx">
+    <EmbeddedResource Include="GUI\BanVeChuyenBay.resx">
       <DependentUpon>BanVeChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemHangVe.resx">
+    <EmbeddedResource Include="GUI\ThemHangVe.resx">
       <DependentUpon>ThemHangVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemHanhKhach.resx">
+    <EmbeddedResource Include="GUI\ThemHanhKhach.resx">
       <DependentUpon>ThemHanhKhach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -224,5 +267,6 @@
   <ItemGroup>
     <None Include="Resources\dessert-roadtrip-nevada-united-states-90633.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
