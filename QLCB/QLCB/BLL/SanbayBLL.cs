@@ -52,5 +52,9 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public Sanbay SearchTheoTen(string id)
+        {
+            return dal.SearchTheoTen(id);
+        }
     }
 }

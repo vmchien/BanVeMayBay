@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -163,12 +164,6 @@
     <Compile Include="GUI\BanVeChuyenBay.Designer.cs">
       <DependentUpon>BanVeChuyenBay.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ThemHangVe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\ThemHangVe.Designer.cs">
-      <DependentUpon>ThemHangVe.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\ThemHanhKhach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,9 +215,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BanVeChuyenBay.resx">
       <DependentUpon>BanVeChuyenBay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ThemHangVe.resx">
-      <DependentUpon>ThemHangVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThemHanhKhach.resx">
       <DependentUpon>ThemHanhKhach.cs</DependentUpon>

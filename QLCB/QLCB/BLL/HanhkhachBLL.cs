@@ -52,5 +52,9 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public Hanhkhach getHanhKhachTail()
+        {
+            return dal.getHanhKhachTail();
+        }
     }
 }

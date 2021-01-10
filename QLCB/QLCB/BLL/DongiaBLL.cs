@@ -48,9 +48,9 @@ namespace QLCB.BLL
                 throw ex;
             }
         }
-        public Dongia Search(string id)
+        public Dongia Search(string id,string mahv)
         {
-            return dal.Search(id);
+            return dal.Search(id, mahv);
         }
     }
 }

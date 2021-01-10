@@ -101,5 +101,23 @@ namespace QLCB.DAL
 
             return k;
         }
+        public Sanbay SearchTheoTen(string id)
+        {
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("SELECT * FROM SANBAY WHERE TENSANBAY = (N'{0}')", id);
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Sanbay k = GetSanbayFromDataRow(table.Rows[0]);
+
+            return k;
+        }
+        
     }
 }

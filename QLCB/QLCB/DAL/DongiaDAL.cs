@@ -86,12 +86,12 @@ namespace QLCB.DAL
                 throw ex;
             }
         }
-        public Dongia Search(string id)
+        public Dongia Search(string id,string maHv)
         {
             DataTable table = null;
             int n = 0;
 
-            string query = string.Format("SELECT * FROM DONGIA WHERE MADONGIA = (N'{0}')", id);
+            string query = string.Format("SELECT * FROM DONGIA WHERE MATUYENBAY = (N'{0}') and MAHANGVE = (N'{1}')", id, maHv);
             table = helper.ExecuteQuery(query);
             n = table.Rows.Count;
 

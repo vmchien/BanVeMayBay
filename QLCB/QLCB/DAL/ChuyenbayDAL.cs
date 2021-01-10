@@ -48,6 +48,31 @@ namespace QLCB.DAL
 
             return list;
         }
+        public Chuyenbay[] SearchTuyenBay(string id)
+        {
+            Chuyenbay[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("select * from CHUYENBAY WHERE MATUYENBAY = (N'{0}')", id);
+
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+
+            list = new Chuyenbay[n];
+            for (int i = 0; i < n; i++)
+            {
+                Chuyenbay s = GetChuyenbayFromDataRow(table.Rows[i]);
+                list[i] = s;
+            }
+
+            return list;
+        }
         public bool Add(Chuyenbay k)
         {
             string query = string.Format("INSERT INTO CHUYENBAY values (N'{0}',N'{1}',N'{2}',N'{3}',N'{4}',N'{5}')", k.MACHUYENBAY, k.MATUYENBAY, k.NGAYGIO, k.THOIGIANBAY, k.SOLUONGGHEHANG1, k.SOLUONGGHEHANG2);
@@ -78,7 +103,7 @@ namespace QLCB.DAL
         }
         public bool Update(Chuyenbay k)
         {
-            string query = string.Format("UPDATE CHUYENBAY SET MATUYENBAY = (N'{0}'),NGAYGIO = (N'{1}'),THOIGIANBAY = (N'{2}'),SOLUONGGHEHANG1 = (N'{3}'),SOLUONGGHEHANG2 = (N'{4}') WHERE MACHUYENBAY = (N'{5}')", k.MATUYENBAY, k.NGAYGIO, k.THOIGIANBAY, k.SOLUONGGHEHANG1, k.SOLUONGGHEHANG2,k.MACHUYENBAY);
+            string query = string.Format("UPDATE CHUYENBAY SET MATUYENBAY = (N'{0}'),NGAYGIO = (N'{1}'),THOIGIANBAY = (N'{2}'),SOLUONGGHEHANG1 = (N'{3}'),SOLUONGGHEHANG2 = (N'{4}') WHERE MACHUYENBAY = (N'{5}')", k.MATUYENBAY, k.NGAYGIO, k.THOIGIANBAY, k.SOLUONGGHEHANG1, k.SOLUONGGHEHANG2, k.MACHUYENBAY);
 
             try
             {
@@ -106,6 +131,23 @@ namespace QLCB.DAL
             Chuyenbay k = GetChuyenbayFromDataRow(table.Rows[0]);
 
             return k;
+        }
+        public Chuyenbay getChuyenBayTail()
+        {
+            Chuyenbay[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM CHUYENBAY ORDER BY MACHUYENBAY DESC ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Chuyenbay bs = GetChuyenbayFromDataRow(table.Rows[0]);
+
+            return bs;
         }
     }
 }

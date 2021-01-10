@@ -46,7 +46,7 @@ namespace QLCB.DAL
         }
         public bool Add(Tuyenbay k)
         {
-            string query = string.Format("INSERT INTO TUYENBAY values (N'{0}',N'{1}',N'{2}')", k.MATUYENBAY, k.SANBAYDI,k.SANBAYDEN);
+            string query = string.Format("INSERT INTO TUYENBAY values (N'{0}',N'{1}',N'{2}')", k.MATUYENBAY, k.SANBAYDI, k.SANBAYDEN);
 
             try
             {
@@ -74,7 +74,7 @@ namespace QLCB.DAL
         }
         public bool Update(Tuyenbay k)
         {
-            string query = string.Format("UPDATE TUYENBAY SET SANBAYDI = (N'{0}'), SANBAYDEN = (N'{1}')  WHERE MATUYENBAY = (N'{2}')", k.SANBAYDI,k.SANBAYDEN, k.MATUYENBAY);
+            string query = string.Format("UPDATE TUYENBAY SET SANBAYDI = (N'{0}'), SANBAYDEN = (N'{1}')  WHERE MATUYENBAY = (N'{2}')", k.SANBAYDI, k.SANBAYDEN, k.MATUYENBAY);
 
             try
             {
@@ -102,6 +102,48 @@ namespace QLCB.DAL
             Tuyenbay k = GetTuyenbayFromDataRow(table.Rows[0]);
 
             return k;
+        }
+        public Tuyenbay[] SearchTheoMaSB(string id)
+        {
+            Tuyenbay[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("SELECT * FROM TUYENBAY WHERE SANBAYDI = (N'{0}')", id);
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+
+            list = new Tuyenbay[n];
+            for (int i = 0; i < n; i++)
+            {
+                Tuyenbay s = GetTuyenbayFromDataRow(table.Rows[i]);
+                list[i] = s;
+            }
+
+            return list;
+        }
+
+        public Tuyenbay getTuyenBayTail()
+        {
+            Tuyenbay[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM TUYENBAY ORDER BY MATUYENBAY DESC ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Tuyenbay bs = GetTuyenbayFromDataRow(table.Rows[0]);
+
+            return bs;
         }
     }
 }

@@ -52,5 +52,13 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public Chuyenbay getChuyenBayTail()
+        {
+            return dal.getChuyenBayTail();
+        }
+        public Chuyenbay[] SearchTuyenBay(string id)
+        {
+            return dal.SearchTuyenBay(id);
+        }
     }
 }

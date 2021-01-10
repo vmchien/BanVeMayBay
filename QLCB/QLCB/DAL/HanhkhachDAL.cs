@@ -15,10 +15,10 @@ namespace QLCB.DAL
         {
             Hanhkhach k = new Hanhkhach();
 
-            k.MAHANHKHACH = row["MACTDOANHTHUTHANG"].ToString().Trim();
-            k.TENHANHKHACH = row["MACTDOANHTHUTHANG"].ToString().Trim();
-            k.CMND = row["MACTDOANHTHUTHANG"].ToString().Trim();
-            k.DIENTHOAI = row["MACTDOANHTHUTHANG"].ToString().Trim();
+            k.MAHANHKHACH = row["MAHANHKHACH"].ToString().Trim();
+            k.TENHANHKHACH = row["TENHANHKHACH"].ToString().Trim();
+            k.CMND = row["CMND"].ToString().Trim();
+            k.DIENTHOAI = row["DIENTHOAI"].ToString().Trim();
 
 
             return k;
@@ -104,6 +104,23 @@ namespace QLCB.DAL
             Hanhkhach k = GetHanhkhachFromDataRow(table.Rows[0]);
 
             return k;
+        }
+        public Hanhkhach getHanhKhachTail()
+        {
+            Hanhkhach[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM HANHKHACH ORDER BY MAHANHKHACH DESC ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Hanhkhach bs = GetHanhkhachFromDataRow(table.Rows[0]);
+
+            return bs;
         }
     }
 }
