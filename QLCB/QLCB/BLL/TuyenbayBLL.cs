@@ -60,6 +60,10 @@ namespace QLCB.BLL
         {
             return dal.SearchTheoMaSB(id);
         }
-        
+        public Tuyenbay SearchTheoYC(string sanBayDi,string sanBayDen)
+        {
+            return dal.SearchTheoYC(sanBayDi, sanBayDen);
+        }
+
     }
 }

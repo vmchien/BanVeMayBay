@@ -115,6 +115,22 @@ namespace QLCB.DAL
                 throw ex;
             }
         }
+        public bool quyDinhThoiGianBayToiThieu(string k)
+        {
+            StringBuilder query = new StringBuilder();
+            query.Append("alter trigger utr_TGBAYTOITHIEU on CHUYENBAY for insert,update as begin if update(THOIGIANBAY) if not exists ( SELECT * FROM inserted WHERE THOIGIANBAY >= ");
+            query.Append(k);
+            query.Append(" ) begin raiserror(N'Lỗi thêm, sửa không hợp lệ', 16, 1) rollback end end ");
+            try
+            {
+                helper.ExecuteNonQuery(query.ToString());
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public Chuyenbay Search(string id)
         {
             DataTable table = null;

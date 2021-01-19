@@ -62,12 +62,13 @@
             this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonThoat.Location = new System.Drawing.Point(443, 471);
-            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(123, 59);
             this.buttonThoat.TabIndex = 74;
             this.buttonThoat.Text = "THOÁT";
             this.buttonThoat.UseVisualStyleBackColor = false;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // buttonCapNhat
             // 
@@ -80,12 +81,13 @@
             this.buttonCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonCapNhat.Location = new System.Drawing.Point(224, 471);
-            this.buttonCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCapNhat.Name = "buttonCapNhat";
             this.buttonCapNhat.Size = new System.Drawing.Size(123, 59);
             this.buttonCapNhat.TabIndex = 72;
             this.buttonCapNhat.Text = "CẬP NHẬT";
             this.buttonCapNhat.UseVisualStyleBackColor = false;
+            this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
             // label7
             // 
@@ -131,9 +133,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.groupBox1.Location = new System.Drawing.Point(-21, -21);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1297, 130);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
@@ -142,7 +144,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::QLCB.Properties.Resources.map_icon;
             this.pictureBox2.Location = new System.Drawing.Point(19, 36);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(95, 86);
             this.pictureBox2.TabIndex = 26;
@@ -153,7 +155,7 @@
             this.txtTGDungToiDa.BackColor = System.Drawing.SystemColors.Window;
             this.txtTGDungToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTGDungToiDa.Location = new System.Drawing.Point(445, 370);
-            this.txtTGDungToiDa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTGDungToiDa.Margin = new System.Windows.Forms.Padding(4);
             this.txtTGDungToiDa.Name = "txtTGDungToiDa";
             this.txtTGDungToiDa.Size = new System.Drawing.Size(329, 36);
             this.txtTGDungToiDa.TabIndex = 52;
@@ -187,7 +189,7 @@
             this.txtTGDungToiThieu.BackColor = System.Drawing.SystemColors.Window;
             this.txtTGDungToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTGDungToiThieu.Location = new System.Drawing.Point(445, 293);
-            this.txtTGDungToiThieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTGDungToiThieu.Margin = new System.Windows.Forms.Padding(4);
             this.txtTGDungToiThieu.Name = "txtTGDungToiThieu";
             this.txtTGDungToiThieu.Size = new System.Drawing.Size(329, 36);
             this.txtTGDungToiThieu.TabIndex = 78;
@@ -197,7 +199,7 @@
             this.txtSoSBTrungGianToiDa.BackColor = System.Drawing.SystemColors.Window;
             this.txtSoSBTrungGianToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoSBTrungGianToiDa.Location = new System.Drawing.Point(445, 215);
-            this.txtSoSBTrungGianToiDa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoSBTrungGianToiDa.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoSBTrungGianToiDa.Name = "txtSoSBTrungGianToiDa";
             this.txtSoSBTrungGianToiDa.Size = new System.Drawing.Size(329, 36);
             this.txtSoSBTrungGianToiDa.TabIndex = 79;
@@ -207,7 +209,7 @@
             this.txtTGBayToiThieu.BackColor = System.Drawing.SystemColors.Window;
             this.txtTGBayToiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTGBayToiThieu.Location = new System.Drawing.Point(445, 142);
-            this.txtTGBayToiThieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTGBayToiThieu.Margin = new System.Windows.Forms.Padding(4);
             this.txtTGBayToiThieu.Name = "txtTGBayToiThieu";
             this.txtTGBayToiThieu.Size = new System.Drawing.Size(329, 36);
             this.txtTGBayToiThieu.TabIndex = 80;
@@ -217,7 +219,7 @@
             this.pictureBox5.BackgroundImage = global::QLCB.Properties.Resources.cat_food_hearts_icon;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Location = new System.Drawing.Point(751, 494);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(77, 75);
             this.pictureBox5.TabIndex = 77;
@@ -228,7 +230,7 @@
             this.pictureBox3.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Location = new System.Drawing.Point(129, 469);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 62);
             this.pictureBox3.TabIndex = 75;
@@ -239,7 +241,7 @@
             this.pictureBox1.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(-560, 556);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 62);
             this.pictureBox1.TabIndex = 57;
@@ -265,7 +267,7 @@
             this.Controls.Add(this.txtTGDungToiDa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThayDoiQuyDinh1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThayDoiQuyDinh1";

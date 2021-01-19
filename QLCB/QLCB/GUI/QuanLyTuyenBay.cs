@@ -1,5 +1,6 @@
 ﻿using QLCB.BLL;
 using QLCB.DTO;
+using QLCB.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace QLCB
 
         TuyenbayBLL bll = new TuyenbayBLL();
         SanbayBLL bllsb = new SanbayBLL();
+        DongiaBLL blldg = new DongiaBLL();
         public QuanLyTuyenBay()
         {
             InitializeComponent();
@@ -26,6 +28,8 @@ namespace QLCB
             this.buttonThem.Click += buttonThem_Click;
             this.buttonXoa.Click += bntRemove_Click;
             this.buttonSua.Click += bntUpdate_Click;
+            this.buttonThoat.Click += buttonThoat_Click;
+
         }
         private void QuanLyTuyenBay_Load(object sender, EventArgs e)
         {
@@ -65,6 +69,10 @@ namespace QLCB
                 MessageBox.Show(ex.Message, "Error while loading data",
                     MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
+        }
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         Tuyenbay GetTuyenBayInfo()
         {
@@ -111,6 +119,8 @@ namespace QLCB
                 {
                     MessageBox.Show(ex.Message);
                 }
+                ThemDonGiaVe fbs = new ThemDonGiaVe(tb.MATUYENBAY);
+                fbs.ShowDialog();
             }
         }
         void bntRemove_Click(object sender, EventArgs e)
@@ -118,8 +128,11 @@ namespace QLCB
             string maSanBay = txtMaTuyenBay.Text.Trim();
             try
             {
+                blldg.Remove(maSanBay);
+                blldg.Remove(maSanBay);
                 if (bll.Remove(maSanBay))
                 {
+
                     LoadData();
                     txtMaTuyenBay.Clear();
                     txtSanBayDen.Clear();

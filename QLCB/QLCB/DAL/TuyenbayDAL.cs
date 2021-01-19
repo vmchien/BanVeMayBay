@@ -103,6 +103,23 @@ namespace QLCB.DAL
 
             return k;
         }
+        public Tuyenbay SearchTheoYC(string sanBayDi, string sanBayDen)
+        {
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("SELECT * FROM TUYENBAY WHERE SANBAYDI = (N'{0}') and SANBAYDEN = (N'{1}')", sanBayDi, sanBayDen);
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Tuyenbay k = GetTuyenbayFromDataRow(table.Rows[0]);
+
+            return k;
+        }
         public Tuyenbay[] SearchTheoMaSB(string id)
         {
             Tuyenbay[] list = null;

@@ -28,7 +28,7 @@ namespace QLCB
         private void buttonBanVe_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DatVe fbs = new DatVe();
+            BanVeChuyenBay fbs = new BanVeChuyenBay();
             fbs.ShowDialog();
             this.Show();
         }

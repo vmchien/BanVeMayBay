@@ -52,9 +52,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.groupBox1.Location = new System.Drawing.Point(-5, -38);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(797, 130);
             this.groupBox1.TabIndex = 91;
             this.groupBox1.TabStop = false;
@@ -83,22 +83,24 @@
             this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonThoat.Location = new System.Drawing.Point(361, 207);
-            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(123, 43);
             this.buttonThoat.TabIndex = 92;
             this.buttonThoat.Text = "Thoát";
             this.buttonThoat.UseVisualStyleBackColor = false;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // cb_Nam
             // 
             this.cb_Nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Nam.FormattingEnabled = true;
             this.cb_Nam.Location = new System.Drawing.Point(288, 135);
-            this.cb_Nam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Nam.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Nam.Name = "cb_Nam";
             this.cb_Nam.Size = new System.Drawing.Size(195, 33);
             this.cb_Nam.TabIndex = 90;
+            this.cb_Nam.SelectedIndexChanged += new System.EventHandler(this.cb_Nam_SelectedIndexChanged);
             // 
             // buttonBaoCao
             // 
@@ -111,12 +113,13 @@
             this.buttonBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBaoCao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonBaoCao.Location = new System.Drawing.Point(171, 207);
-            this.buttonBaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBaoCao.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBaoCao.Name = "buttonBaoCao";
             this.buttonBaoCao.Size = new System.Drawing.Size(121, 43);
             this.buttonBaoCao.TabIndex = 88;
             this.buttonBaoCao.Text = "Báo Cáo";
             this.buttonBaoCao.UseVisualStyleBackColor = false;
+            this.buttonBaoCao.Click += new System.EventHandler(this.buttonBaoCao_Click);
             // 
             // notifyIcon1
             // 
@@ -146,7 +149,7 @@
             this.pictureBox6.BackgroundImage = global::QLCB.Properties.Resources.cat_food_hearts_icon;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Location = new System.Drawing.Point(553, 139);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(77, 75);
             this.pictureBox6.TabIndex = 93;
@@ -157,7 +160,7 @@
             this.pictureBox4.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Location = new System.Drawing.Point(56, 108);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 62);
             this.pictureBox4.TabIndex = 94;
@@ -176,7 +179,7 @@
             this.Controls.Add(this.buttonBaoCao);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LapBaoCaoNam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LapBaoCaoNam";

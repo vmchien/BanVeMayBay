@@ -15,14 +15,12 @@ namespace QLCB.DAL
         {
             Doanhthuthang k = new Doanhthuthang();
 
-            k.MADOANHTHUTHANG = row["MACTDOANHTHUTHANG"].ToString().Trim();
-            k.MADOANHTHUNAM = row["MACTDOANHTHUTHANG"].ToString().Trim();
+            k.MADOANHTHUTHANG = row["MADOANHTHUTHANG"].ToString().Trim();
+            k.MADOANHTHUNAM = row["MADOANHTHUNAM"].ToString().Trim();
             k.THANG = int.Parse(row["THANG"].ToString().Trim());
             k.SOCHUYENBAY = int.Parse(row["SOCHUYENBAY"].ToString().Trim());
             k.TYLE = int.Parse(row["TYLE"].ToString().Trim());
             k.TONGDOANHTHUTHANG = float.Parse(row["TONGDOANHTHUTHANG"].ToString().Trim());
-
-
 
             return k;
         }
@@ -108,5 +106,23 @@ namespace QLCB.DAL
 
             return k;
         }
+        public Doanhthuthang SearchNamThang(string thang, string nam)
+        {
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("select * from DOANHTHUTHANG where MADOANHTHUNAM = (N'{0}') and THAng = (N'{1}')", nam, thang);
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Doanhthuthang k = GetDoanhthuthangFromDataRow(table.Rows[0]);
+
+            return k;
+        }
+        
     }
 }

@@ -53,5 +53,16 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public bool quyDinhThoiGianChamNhat(string a)
+        {
+            try
+            {
+                return dal.quyDinhThoiGianChamNhat(a);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

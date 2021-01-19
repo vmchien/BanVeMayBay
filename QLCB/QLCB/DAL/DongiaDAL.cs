@@ -60,7 +60,7 @@ namespace QLCB.DAL
         }
         public bool Remove(string id)
         {
-            string query = string.Format("DELETE FROM DONGIA WHERE MADONGIA = (N'{0}')", id);
+            string query = string.Format("DELETE FROM DONGIA WHERE MATUYENBAY = (N'{0}')", id);
 
             try
             {
@@ -102,6 +102,23 @@ namespace QLCB.DAL
             Dongia k = GetDongiaFromDataRow(table.Rows[0]);
 
             return k;
+        }
+        public Dongia getDonGiaTail()
+        {
+            Dongia[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM Dongia ORDER BY madongia DESC ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Dongia bs = GetDongiaFromDataRow(table.Rows[0]);
+
+            return bs;
         }
     }
 }

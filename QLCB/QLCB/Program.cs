@@ -16,8 +16,8 @@ namespace QLCB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-          //     Application.Run(new MAIN());
-            Application.Run(new NhanLichChuyenBay());
+               Application.Run(new MAIN());
+         //   Application.Run(new LapBaoCaoNam());
         }
     }
 }

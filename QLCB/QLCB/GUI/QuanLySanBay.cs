@@ -24,6 +24,8 @@ namespace QLCB
             this.buttonThem.Click += buttonThem_Click;
             this.buttonXoa.Click += bntRemove_Click;
             this.buttonSua.Click += bntUpdate_Click;
+            this.buttonThoat.Click += buttonThoat_Click;
+            
         }
 
         private void QuanLySanBay_Load(object sender, EventArgs e)
@@ -161,5 +163,10 @@ namespace QLCB
                 MessageBox.Show(ex.Message);    // show error if failed
             }
         }
+        void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        
     }
 }

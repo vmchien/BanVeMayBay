@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.buttonQLSB = new System.Windows.Forms.Button();
             this.buttonQLTB = new System.Windows.Forms.Button();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.dateTime_ngay = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTim = new System.Windows.Forms.RichTextBox();
             this.buttonTim = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.buttonThem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtGhiChú = new System.Windows.Forms.TextBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.txtThoiGianDung = new System.Windows.Forms.TextBox();
             this.txtSBTrungGian = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -173,8 +173,8 @@
             this.dgvSBTrungGian.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSBTrungGian.Name = "dgvSBTrungGian";
             this.dgvSBTrungGian.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dgvSBTrungGian.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvSBTrungGian.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSBTrungGian.Size = new System.Drawing.Size(709, 245);
             this.dgvSBTrungGian.TabIndex = 15;
             // 
@@ -336,14 +336,14 @@
             this.buttonQLTB.Text = "Sân Bay Đến";
             this.buttonQLTB.UseVisualStyleBackColor = false;
             // 
-            // dateTime
+            // dateTime_ngay
             // 
-            this.dateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTime.Location = new System.Drawing.Point(323, 306);
-            this.dateTime.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(472, 30);
-            this.dateTime.TabIndex = 50;
+            this.dateTime_ngay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTime_ngay.Location = new System.Drawing.Point(323, 306);
+            this.dateTime_ngay.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTime_ngay.Name = "dateTime_ngay";
+            this.dateTime_ngay.Size = new System.Drawing.Size(472, 30);
+            this.dateTime_ngay.TabIndex = 50;
             // 
             // groupBox2
             // 
@@ -355,7 +355,7 @@
             this.groupBox2.Controls.Add(this.buttonThem);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtGhiChú);
+            this.groupBox2.Controls.Add(this.txtGhiChu);
             this.groupBox2.Controls.Add(this.txtThoiGianDung);
             this.groupBox2.Controls.Add(this.txtSBTrungGian);
             this.groupBox2.Controls.Add(this.label9);
@@ -459,14 +459,14 @@
             this.label6.TabIndex = 36;
             this.label6.Text = "Thời Gian Dừng";
             // 
-            // txtGhiChú
+            // txtGhiChu
             // 
-            this.txtGhiChú.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGhiChú.Location = new System.Drawing.Point(971, 183);
-            this.txtGhiChú.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGhiChú.Name = "txtGhiChú";
-            this.txtGhiChú.Size = new System.Drawing.Size(429, 30);
-            this.txtGhiChú.TabIndex = 35;
+            this.txtGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGhiChu.Location = new System.Drawing.Point(971, 183);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(429, 30);
+            this.txtGhiChu.TabIndex = 35;
             // 
             // txtThoiGianDung
             // 
@@ -547,7 +547,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1465, 807);
-            this.Controls.Add(this.dateTime);
+            this.Controls.Add(this.dateTime_ngay);
             this.Controls.Add(this.buttonQLTB);
             this.Controls.Add(this.buttonQLSB);
             this.Controls.Add(this.pictureBox6);
@@ -619,11 +619,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gHICHUDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button buttonQLSB;
         private System.Windows.Forms.Button buttonQLTB;
-        private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.DateTimePicker dateTime_ngay;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtGhiChú;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.TextBox txtThoiGianDung;
         private System.Windows.Forms.TextBox txtSBTrungGian;
         private System.Windows.Forms.Label label9;

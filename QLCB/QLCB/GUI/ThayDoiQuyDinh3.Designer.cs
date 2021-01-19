@@ -58,7 +58,7 @@
             this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonThoat.Location = new System.Drawing.Point(508, 351);
-            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(123, 59);
             this.buttonThoat.TabIndex = 89;
@@ -76,12 +76,13 @@
             this.buttonCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonCapNhat.Location = new System.Drawing.Point(289, 351);
-            this.buttonCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCapNhat.Name = "buttonCapNhat";
             this.buttonCapNhat.Size = new System.Drawing.Size(123, 59);
             this.buttonCapNhat.TabIndex = 88;
             this.buttonCapNhat.Text = "CẬP NHẬT";
             this.buttonCapNhat.UseVisualStyleBackColor = false;
+            this.buttonCapNhat.Click += new System.EventHandler(this.buttonCapNhat_Click);
             // 
             // label7
             // 
@@ -113,7 +114,7 @@
             this.txtTGCN_DatVe.BackColor = System.Drawing.SystemColors.Window;
             this.txtTGCN_DatVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTGCN_DatVe.Location = new System.Drawing.Point(508, 183);
-            this.txtTGCN_DatVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTGCN_DatVe.Margin = new System.Windows.Forms.Padding(4);
             this.txtTGCN_DatVe.Name = "txtTGCN_DatVe";
             this.txtTGCN_DatVe.Size = new System.Drawing.Size(329, 36);
             this.txtTGCN_DatVe.TabIndex = 92;
@@ -125,9 +126,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.groupBox1.Location = new System.Drawing.Point(-40, -23);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1353, 158);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
@@ -136,9 +137,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::QLCB.Properties.Resources.map_icon;
             this.pictureBox2.Location = new System.Drawing.Point(113, 49);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 86);
+            this.pictureBox2.Size = new System.Drawing.Size(74, 68);
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
             // 
@@ -147,7 +148,7 @@
             this.txtTGCN_HuyVe.BackColor = System.Drawing.SystemColors.Window;
             this.txtTGCN_HuyVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTGCN_HuyVe.Location = new System.Drawing.Point(508, 254);
-            this.txtTGCN_HuyVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTGCN_HuyVe.Margin = new System.Windows.Forms.Padding(4);
             this.txtTGCN_HuyVe.Name = "txtTGCN_HuyVe";
             this.txtTGCN_HuyVe.Size = new System.Drawing.Size(329, 36);
             this.txtTGCN_HuyVe.TabIndex = 83;
@@ -169,7 +170,7 @@
             this.pictureBox5.BackgroundImage = global::QLCB.Properties.Resources.cat_food_hearts_icon;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Location = new System.Drawing.Point(795, 372);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(77, 75);
             this.pictureBox5.TabIndex = 91;
@@ -180,7 +181,7 @@
             this.pictureBox3.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Location = new System.Drawing.Point(195, 348);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 62);
             this.pictureBox3.TabIndex = 90;
@@ -191,7 +192,7 @@
             this.pictureBox1.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(-523, 581);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 62);
             this.pictureBox1.TabIndex = 86;
@@ -213,7 +214,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtTGCN_HuyVe);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThayDoiQuyDinh3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThayDoiQuyDinh3";

@@ -106,5 +106,22 @@ namespace QLCB.DAL
 
             return k;
         }
+        public bool quyDinhThoiGianChamNhat(string k)
+        {
+            StringBuilder query = new StringBuilder();
+            query.Append("alter trigger utr_DATVE on PHIEUDATCHO for insert,update as begin if update(NGAYDAT) if not exists ( SELECT * FROM inserted I JOIN CHUYENBAY CB ON CB.MACHUYENBAY = I.MACHUYENBAY  WHERE DATEDIFF(DAY, ");
+            query.Append(k);
+            query.Append(" , CB.NGAYGIO) < 1  ) begin raiserror(N'Lỗi thêm, sửa không hợp lệ', 16, 1) rollback end end ");
+
+            try
+            {
+                helper.ExecuteNonQuery(query.ToString());
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

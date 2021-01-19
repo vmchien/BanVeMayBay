@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -88,9 +88,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.groupBox1.Location = new System.Drawing.Point(3, -20);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1480, 135);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
@@ -99,9 +99,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::QLCB.Properties.Resources.map_icon;
             this.pictureBox2.Location = new System.Drawing.Point(248, 34);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 86);
+            this.pictureBox2.Size = new System.Drawing.Size(83, 74);
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
             // 
@@ -110,7 +110,7 @@
             this.pictureBox1.BackgroundImage = global::QLCB.Properties.Resources.heart_love_icon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(-536, 581);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 62);
             this.pictureBox1.TabIndex = 86;
@@ -125,9 +125,9 @@
             this.groupBox2.Controls.Add(this.dgvThuoc);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(3, 123);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(792, 447);
             this.groupBox2.TabIndex = 87;
             this.groupBox2.TabStop = false;
@@ -137,7 +137,7 @@
             // 
             this.cb_Load.FormattingEnabled = true;
             this.cb_Load.Location = new System.Drawing.Point(120, 23);
-            this.cb_Load.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Load.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Load.Name = "cb_Load";
             this.cb_Load.Size = new System.Drawing.Size(155, 24);
             this.cb_Load.TabIndex = 10;
@@ -145,7 +145,7 @@
             // txtTim
             // 
             this.txtTim.Location = new System.Drawing.Point(492, 25);
-            this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTim.Margin = new System.Windows.Forms.Padding(4);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(188, 25);
             this.txtTim.TabIndex = 9;
@@ -155,7 +155,7 @@
             // 
             this.buttonTim.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonTim.Location = new System.Drawing.Point(684, 23);
-            this.buttonTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonTim.Margin = new System.Windows.Forms.Padding(4);
             this.buttonTim.Name = "buttonTim";
             this.buttonTim.Size = new System.Drawing.Size(100, 28);
             this.buttonTim.TabIndex = 8;
@@ -166,7 +166,7 @@
             // 
             this.buttonLoad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonLoad.Location = new System.Drawing.Point(12, 23);
-            this.buttonLoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLoad.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(100, 28);
             this.buttonLoad.TabIndex = 7;
@@ -178,22 +178,23 @@
             this.dgvThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvThuoc.BackgroundColor = System.Drawing.Color.White;
             this.dgvThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvThuoc.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThuoc.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvThuoc.Location = new System.Drawing.Point(8, 58);
-            this.dgvThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.dgvThuoc.Name = "dgvThuoc";
             this.dgvThuoc.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvThuoc.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dgvThuoc.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvThuoc.Size = new System.Drawing.Size(776, 377);
             this.dgvThuoc.TabIndex = 6;
+            this.dgvThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThuoc_CellClick);
             // 
             // groupBox3
             // 
@@ -214,9 +215,9 @@
             this.groupBox3.Controls.Add(this.txtMaDonGia);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(803, 123);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(637, 447);
             this.groupBox3.TabIndex = 88;
             this.groupBox3.TabStop = false;
@@ -227,7 +228,7 @@
             this.pictureBox5.BackgroundImage = global::QLCB.Properties.Resources.cat_food_hearts_icon;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Location = new System.Drawing.Point(552, 359);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(77, 75);
             this.pictureBox5.TabIndex = 47;
@@ -237,7 +238,7 @@
             // 
             this.txtTenHangVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenHangVe.Location = new System.Drawing.Point(232, 229);
-            this.txtTenHangVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenHangVe.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenHangVe.Name = "txtTenHangVe";
             this.txtTenHangVe.Size = new System.Drawing.Size(368, 26);
             this.txtTenHangVe.TabIndex = 31;
@@ -246,7 +247,7 @@
             // 
             this.buttonThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonThoat.Location = new System.Drawing.Point(447, 372);
-            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonThoat.Margin = new System.Windows.Forms.Padding(4);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(92, 39);
             this.buttonThoat.TabIndex = 41;
@@ -269,7 +270,7 @@
             // 
             this.buttonSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonSua.Location = new System.Drawing.Point(325, 372);
-            this.buttonSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSua.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSua.Name = "buttonSua";
             this.buttonSua.Size = new System.Drawing.Size(96, 39);
             this.buttonSua.TabIndex = 14;
@@ -292,7 +293,7 @@
             // 
             this.buttonXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonXoa.Location = new System.Drawing.Point(196, 372);
-            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(99, 39);
             this.buttonXoa.TabIndex = 13;
@@ -303,7 +304,7 @@
             // 
             this.buttonThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonThem.Location = new System.Drawing.Point(71, 372);
-            this.buttonThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonThem.Margin = new System.Windows.Forms.Padding(4);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(100, 39);
             this.buttonThem.TabIndex = 15;
@@ -314,9 +315,8 @@
             // 
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDonGia.Location = new System.Drawing.Point(232, 295);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.ReadOnly = true;
             this.txtDonGia.Size = new System.Drawing.Size(368, 26);
             this.txtDonGia.TabIndex = 29;
             // 
@@ -340,15 +340,15 @@
             this.label3.Location = new System.Drawing.Point(31, 102);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.Size = new System.Drawing.Size(153, 25);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Mã Tuyến Bay";
+            this.label3.Text = "Mã Chuyến Bay";
             // 
             // txtMaTuyenBay
             // 
             this.txtMaTuyenBay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaTuyenBay.Location = new System.Drawing.Point(232, 101);
-            this.txtMaTuyenBay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaTuyenBay.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaTuyenBay.Name = "txtMaTuyenBay";
             this.txtMaTuyenBay.Size = new System.Drawing.Size(368, 26);
             this.txtMaTuyenBay.TabIndex = 22;
@@ -357,7 +357,7 @@
             // 
             this.txtMaHangVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHangVe.Location = new System.Drawing.Point(232, 164);
-            this.txtMaHangVe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaHangVe.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHangVe.Name = "txtMaHangVe";
             this.txtMaHangVe.Size = new System.Drawing.Size(368, 26);
             this.txtMaHangVe.TabIndex = 23;
@@ -378,7 +378,7 @@
             // 
             this.txtMaDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDonGia.Location = new System.Drawing.Point(232, 38);
-            this.txtMaDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDonGia.Name = "txtMaDonGia";
             this.txtMaDonGia.ReadOnly = true;
             this.txtMaDonGia.Size = new System.Drawing.Size(368, 26);
@@ -394,11 +394,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThayDoiQuyDinh2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThayDoiQuyDinh2";
-            this.Load += new System.EventHandler(this.ThayDoiQuyDinh2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

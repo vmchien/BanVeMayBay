@@ -101,39 +101,6 @@ namespace QLCB
             tb.SOLUONGGHEHANG2 = int.Parse(txtSLGheHang2.Text.Trim());
             return tb;
         }
-        void buttonThem_Click(object sender, EventArgs e)
-        {
-            Chuyenbay tb = GetChuyenBayInfo();
-
-            Chuyenbay tbTail = bll.getChuyenBayTail();
-            string st = tbTail.MACHUYENBAY;
-            int id = Int32.Parse(st.Substring(3));
-            id++;
-            string prefix = "CB0" + id;
-
-            tb.MACHUYENBAY = prefix;
-            try
-            {
-                if (bll.Add(tb))
-                {
-                    LoadData();
-
-                    txtMaChuyenBay.Clear();
-                    txtMaTuyenBay.Clear();
-                    txtNgayGioBay.Clear();
-                    txtThoiGianBay.Clear();
-                    txtSLGheHang1.Clear();
-                    txtSLGheHang2.Clear();
-
-                    MessageBox.Show("Thêm thành công", "THÀNH CÔNG",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
         void bntRemove_Click(object sender, EventArgs e)
         {
             string maChuyenBay = txtMaChuyenBay.Text.Trim();

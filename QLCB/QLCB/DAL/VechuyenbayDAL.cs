@@ -106,5 +106,23 @@ namespace QLCB.DAL
 
             return k;
         }
+        public Vechuyenbay getVeTail()
+        {
+            Vechuyenbay[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM VECHUYENBAY ORDER BY MAVE DESC  ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Vechuyenbay bs = GetVechuyenbayFromDataRow(table.Rows[0]);
+
+            return bs;
+        }
+        
     }
 }

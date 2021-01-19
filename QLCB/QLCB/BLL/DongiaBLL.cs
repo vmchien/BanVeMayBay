@@ -52,5 +52,9 @@ namespace QLCB.BLL
         {
             return dal.Search(id, mahv);
         }
+        public Dongia getDonGiaTail()
+        {
+            return dal.getDonGiaTail();
+        }
     }
 }

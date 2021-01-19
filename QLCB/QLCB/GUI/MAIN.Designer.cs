@@ -60,7 +60,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(617, 519);
+            this.tabControl1.Size = new System.Drawing.Size(609, 511);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage4
@@ -71,7 +71,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(609, 490);
+            this.tabPage4.Size = new System.Drawing.Size(601, 482);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Đặt Vé";
             // 
@@ -85,7 +85,7 @@
             this.buttonNhanLichCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNhanLichCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNhanLichCB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonNhanLichCB.Location = new System.Drawing.Point(120, 91);
+            this.buttonNhanLichCB.Location = new System.Drawing.Point(120, 142);
             this.buttonNhanLichCB.Margin = new System.Windows.Forms.Padding(4);
             this.buttonNhanLichCB.Name = "buttonNhanLichCB";
             this.buttonNhanLichCB.Size = new System.Drawing.Size(356, 59);
@@ -123,7 +123,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(609, 490);
+            this.tabPage1.Size = new System.Drawing.Size(601, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản Lý";
             // 
@@ -193,7 +193,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(609, 490);
+            this.tabPage3.Size = new System.Drawing.Size(601, 482);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quy Định";
             // 
@@ -263,7 +263,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(609, 490);
+            this.tabPage2.Size = new System.Drawing.Size(601, 482);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Doanh Thu";
             // 

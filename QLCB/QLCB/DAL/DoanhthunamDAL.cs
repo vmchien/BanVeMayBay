@@ -105,5 +105,31 @@ namespace QLCB.DAL
 
             return k;
         }
+        public Doanhthunam SearchNam(string id)
+        {
+            DataTable table = null;
+            int n = 0;
+
+            string query = string.Format("SELECT * FROM DOANHTHUNAM WHERE NAM = (N'{0}')", id);
+            table = helper.ExecuteQuery(query);
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Doanhthunam k = GetDoanhthunamFromDataRow(table.Rows[0]);
+
+            return k;
+        }
+        public string tongDT(string id)
+        {
+            DataTable table = null;
+
+            string query = string.Format("select sum(t.TONGDOANHTHUTHANG) tien from DOANHTHUNAM n join DOANHTHUTHANG t on n.MADOANHTHUNAM = t.MADOANHTHUNAM where t.MADOANHTHUNAM = (N'{0}') group by n.MADOANHTHUNAM", id);
+            table = helper.ExecuteQuery(query);
+            return table.Rows[0]["tien"].ToString().Trim();
+        }
+
     }
 }

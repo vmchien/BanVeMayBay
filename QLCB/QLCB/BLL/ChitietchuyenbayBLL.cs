@@ -15,6 +15,11 @@ namespace QLCB.BLL
         {
             return dal.GetList();
         }
+        public Chitietchuyenbay[] GetListTheoMaChuyenBay(string id)
+        {
+            return dal.GetListTheoMaChuyenBay(id);
+        }
+        
         public bool Add(Chitietchuyenbay k)
         {
             try
@@ -51,6 +56,32 @@ namespace QLCB.BLL
         public Chitietchuyenbay Search(string id)
         {
             return dal.Search(id);
+        }
+        public bool quyDinhThoiGianDungToiThieu(string a)
+        {
+            try
+            {
+                return dal.quyDinhThoiGianDungToiThieu(a);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public bool quyDinhThoiGianDungToiDa(string a)
+        {
+            try
+            {
+                return dal.quyDinhThoiGianDungToiDa(a);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public Chitietchuyenbay getCTChuyenBayTail()
+        {
+            return dal.getCTChuyenBayTail();
         }
     }
 }

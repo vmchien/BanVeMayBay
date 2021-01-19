@@ -27,6 +27,8 @@ namespace QLCB
             this.Load += QuanLySanBay_Load;
             this.bntHanhKhach.Click += bntHanhKhach_Click;
             this.buttonLamMoi.Click += buttonLamMoi_Click;
+            this.buttonThoat.Click += buttonThoat_Click;
+            
         }
         void QuanLySanBay_Load(object sender, EventArgs e)
         {      
@@ -52,6 +54,11 @@ namespace QLCB
             detailHanhKhach(makh);
 
         }
+        void buttonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        
         void buttonLamMoi_Click(object sender, EventArgs e)
         {
             cbb_machuyenbay.Text="";

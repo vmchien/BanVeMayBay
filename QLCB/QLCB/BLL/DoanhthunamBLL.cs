@@ -52,5 +52,13 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public Doanhthunam SearchNam(string id)
+        {
+            return dal.SearchNam(id);
+        }
+        public string tongDT(string id)
+        {
+            return dal.tongDT(id);
+        }
     }
 }

@@ -52,5 +52,9 @@ namespace QLCB.BLL
         {
             return dal.Search(id);
         }
+        public Doanhthuthang SearchNamThang(string thang, string nam)
+        {
+            return dal.SearchNamThang(thang, nam);
+        }
     }
 }
