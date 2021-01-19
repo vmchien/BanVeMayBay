@@ -123,5 +123,22 @@ namespace QLCB.DAL
                 throw ex;
             }
         }
+        public Phieudatcho getPhieuDatChoTail()
+        {
+            Phieudatcho[] list = null;
+            DataTable table = null;
+            int n = 0;
+
+            table = helper.ExecuteQuery("SELECT TOP 1 * FROM PHIEUDATCHO ORDER BY MAPHIEUDAT DESC ");  // get all students
+            n = table.Rows.Count;
+
+            if (n == 0)
+            {
+                return null;
+            }
+            Phieudatcho bs = GetPhieudatchoFromDataRow(table.Rows[0]);
+
+            return bs;
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace QLCB
         TuyenbayBLL blltb = new TuyenbayBLL();
         DongiaBLL blldg = new DongiaBLL();
         HangveBLL bllhv = new HangveBLL();
+        PhieudatchoBLL bllpdc = new PhieudatchoBLL();
 
         Tuyenbay tuyenbay = new Tuyenbay();
         public BanVeChuyenBay()
@@ -28,10 +29,10 @@ namespace QLCB
             this.bntHanhKhach.Click += bntHanhKhach_Click;
             this.buttonLamMoi.Click += buttonLamMoi_Click;
             this.buttonThoat.Click += buttonThoat_Click;
-            
+            this.buttonLuu.Click += buttonLuu_Click;
         }
         void QuanLySanBay_Load(object sender, EventArgs e)
-        {      
+        {
             cbb_machuyenbay.Items.Clear();
             foreach (Chuyenbay a in bllcb.GetList())
             {
@@ -58,10 +59,10 @@ namespace QLCB
         {
             this.Close();
         }
-        
+
         void buttonLamMoi_Click(object sender, EventArgs e)
         {
-            cbb_machuyenbay.Text="";
+            cbb_machuyenbay.Text = "";
             cb_HangVe.Text = "";
             checkBox.Checked = false;
             txtCMND.Clear();
@@ -113,14 +114,44 @@ namespace QLCB
                 txtSanBayDen.Text = tuyenbay.SANBAYDEN;
             }
         }
-
         private void cb_HangVe_SelectedIndexChanged(object sender, EventArgs e)
         {
             string mahv = cb_HangVe.SelectedItem.ToString();
             txtTenHangVe.Text = bllhv.Search(mahv).TENHANGVE;
 
-            Dongia a = blldg.Search(tuyenbay.MATUYENBAY,mahv);
+            Dongia a = blldg.Search(tuyenbay.MATUYENBAY, mahv);
             txtGiaTien.Text = a.DONGIA.ToString();
         }
+        private void buttonLuu_Click(object sender, EventArgs e)
+        {
+            Phieudatcho pdc = new Phieudatcho();
+            pdc.MACHUYENBAY = cbb_machuyenbay.SelectedItem.ToString();
+            pdc.MAHANHKHACH = txtMaKhachHang.Text;
+            pdc.MAHANGVE = cb_HangVe.SelectedItem.ToString();
+            pdc.GIATIEN = float.Parse(txtGiaTien.Text);
+            pdc.NGAYDAT = dateTimePicker1.Value.ToString();
+
+            Phieudatcho tail = bllpdc.getPhieuDatChoTail();
+            string st = tail.MAPHIEUDAT;
+            int id = Int32.Parse(st.Substring(3));
+            id++;
+            string prefix = "PD0" + id;
+
+            pdc.MAPHIEUDAT = prefix;
+
+            try
+            {
+                if (bllpdc.Add(pdc))
+                {
+                    MessageBox.Show("Thêm thành công", "THÀNH CÔNG",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }

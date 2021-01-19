@@ -64,5 +64,9 @@ namespace QLCB.BLL
                 throw ex;
             }
         }
+        public Phieudatcho getPhieuDatChoTail()
+        {
+            return dal.getPhieuDatChoTail();
+        }
     }
 }
