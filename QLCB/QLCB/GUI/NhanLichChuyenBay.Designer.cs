@@ -177,6 +177,7 @@
             this.dgvSBTrungGian.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSBTrungGian.Size = new System.Drawing.Size(709, 245);
             this.dgvSBTrungGian.TabIndex = 15;
+            this.dgvSBTrungGian.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSBTrungGian_CellClick);
             // 
             // cb_SanBayDi
             // 
