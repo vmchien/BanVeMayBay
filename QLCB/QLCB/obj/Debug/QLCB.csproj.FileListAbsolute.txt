@@ -43,3 +43,25 @@ C:\Users\VU MINH CHIEN\Desktop\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.exe.config
 C:\Users\VU MINH CHIEN\Desktop\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.exe
 C:\Users\VU MINH CHIEN\Desktop\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.pdb
 C:\Users\VU MINH CHIEN\Desktop\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.GUI.ThemDonGiaVe.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.exe.config
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.exe
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\bin\Debug\QLCB.pdb
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.csprojAssemblyReference.cache
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.LapBaoCaoNam.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.LapBaoCaoThang.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.MAIN.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.NhanLichChuyenBay.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.GUI.ThemDonGiaVe.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.Properties.Resources.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.QuanLyChuyenBay.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.QuanLySanBay.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.QuanLyTuyenBay.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.ThayDoiQuyDinh1.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.ThayDoiQuyDinh2.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.ThayDoiQuyDinh3.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.BanVeChuyenBay.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.ThemHanhKhach.resources
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.csproj.GenerateResource.cache
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.csproj.CoreCompileInputs.cache
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.exe
+C:\Users\VU MINH CHIEN\Desktop\New folder (2)\BanVeMayBay\QLCB\QLCB\obj\Debug\QLCB.pdb

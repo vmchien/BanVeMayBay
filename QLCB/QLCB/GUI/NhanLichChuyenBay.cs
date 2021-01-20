@@ -27,7 +27,8 @@ namespace QLCB
             this.buttonLamMoi.Click += buttonLamMoi_Click;
             this.buttonThoat.Click += buttonThoat_Click;
             this.buttonThem.Click += buttonThem_Click;
-
+            this.buttonQLSB.Click += buttonQLSB_Click;
+            
 
 
         }
@@ -41,6 +42,11 @@ namespace QLCB
         private void buttonQLTBv_Click(object sender, EventArgs e)
         {
             QuanLyTuyenBay fbs = new QuanLyTuyenBay();
+            fbs.ShowDialog();
+        }
+        private void buttonQLSB_Click(object sender, EventArgs e)
+        {
+            QuanLyChuyenBay fbs = new QuanLyChuyenBay();
             fbs.ShowDialog();
         }
 
